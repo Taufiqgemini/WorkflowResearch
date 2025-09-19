@@ -1,0 +1,21 @@
+:root {
+  --font-size-xl: 32px;
+  --font-size-large: 24px;
+  --font-size-medium: 20px;
+  --font-size-base: 16px;
+  --font-size-small: 14px;
+  --font-size-xs: 12px;
+}
+
+a {
+  color: var(--color-red);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+ul {
+  list-style: none;
+}

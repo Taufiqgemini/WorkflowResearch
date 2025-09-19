@@ -1,0 +1,147 @@
+// TODO: Make responsive and mobile first
+
+.header {
+  color: var(--color-neutral-0);
+}
+
+.top-header {
+  background: var(--color-red);
+  grid-column: 1 / 6 !important;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 0;
+  border-top: 2px solid var(--color-neutral-100);
+  border-bottom: 2px solid var(--color-neutral-100);
+
+  p {
+    font-size: var(--font-size-medium);
+    font-weight: 900;
+  }
+}
+
+.main-header {
+  background: var(--color-yellow);
+  grid-column: 1 / 6 !important;
+  padding: 1rem var(--padding-inline);
+  display: flex;
+  gap: 2rem;
+  border-bottom: 2px solid var(--color-neutral-100);
+
+  .logo-and-links {
+    display: flex;
+    flex-direction: column;
+
+    .logo-link {
+      flex-basis: 100%;
+      margin-bottom: 0.5rem;
+
+      .logo {
+        height: 61px;
+      }
+    }
+
+    .below-logo-links ul {
+      display: flex;
+      gap: 1rem;
+
+      a {
+        color: var(--color-neutral-100);
+        font-size: var(--font-size-xs);
+        font-weight: 900;
+      }
+    }
+  }
+
+  .search-and-nav {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    .search {
+      display: flex;
+      border: 2px solid var(--color-neutral-100);
+      height: fit-content;
+
+      .input-field {
+        width: calc(100% - 45px);
+        padding: 0.5rem 1rem;
+        border: none;
+        outline: none;
+        font-size: var(--font-size-medium);
+        font-weight: 900;
+      }
+
+      button {
+        background: var(--color-red);
+        color: var(--color-neutral-0);
+        outline: none;
+        border: none;
+        aspect-ratio: 1/1;
+        width: 45px;
+        height: 45px;
+      }
+    }
+
+    .main-navigation {
+      margin-top: auto;
+
+      .link-list {
+        display: flex;
+        gap: 1rem;
+
+        li {
+          display: flex;
+          justify-content: center;
+          width: fit-content;
+
+          a {
+            color: var(--color-neutral-100);
+            font-size: var(--font-size-small);
+            font-weight: 900;
+          }
+        }
+      }
+    }
+  }
+
+  .login-and-cart {
+    display: flex;
+    gap: 1rem;
+
+    .login {
+      display: flex;
+      flex-direction: column;
+
+      .login-label {
+        font-weight: 900;
+        font-size: var(--font-size-small);
+        margin-top: auto;
+      }
+    }
+
+    .cart {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+
+      .price-and-icon {
+        display: flex;
+        gap: 1rem;
+        .total-price {
+          font-size: var(--font-size-large);
+          font-weight: 900;
+        }
+      }
+
+      .cart-label {
+        font-weight: 900;
+        font-size: var(--font-size-small);
+        margin-top: auto;
+      }
+
+      &:hover p {
+        text-decoration: underline;
+      }
+    }
+  }
+}
