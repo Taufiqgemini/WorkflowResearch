@@ -47,7 +47,7 @@ export function Header() {
           <nav className={styles["main-navigation"]}>
             <ul className={styles["link-list"]}>
               {navLinks.map((link) => (
-                <li>
+                <li key={link.href}>
                   <a href={link.href}>{link.text}</a>
                 </li>
               ))}
